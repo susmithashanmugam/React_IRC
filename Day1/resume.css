@@ -1,0 +1,96 @@
+body {
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.container {
+    height: auto;
+    width: 50vh;
+    display: flex;
+    background-color: rgb(248, 239, 248);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+    border: 2px;
+    margin-top: 0em;
+    margin-left: 80vh;
+}
+
+.auth-input {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+   
+    font-weight: 600;
+    gap: 1rem ;
+    border: 2px;
+    margin-bottom: 1rem;
+}
+
+.auth-btn {
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    /* background-color: blueviolet; */
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); 
+    color: rgb(241, 232, 225);
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+
+.shadow {
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.navbar
+{
+    /* padding-top: 6px; */
+    display:flex;
+    /* background-color: #9b3aa1; */
+    color: bisque;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #0f0f0f41;
+    position:sticky;
+    top: 0px;
+}
+.navbar ul{
+    
+    display: flex;
+    /* padding:5px; */
+    list-style: none;
+
+}
+.navbar li{
+    padding:12px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+
+}

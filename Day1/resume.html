@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="resume.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/vs/front%20end/login1.html?username=&email=&password=">Login</a>
+        </li>
+        <li><a href="file:///C:/Users/HP/OneDrive/Documents/vs/front%20end/resume.html">Register</a>
+        </li>
+    </ul>
+     </div>
+    <div class="container">
+        <h3>Enter Details</h3>
+        
+        <form onsubmit="register()">
+            <lable><b>Enter the name:</b></lable>
+            <input type="text" name="username" id="summa"placeholder="Username" class="auth-input">
+            <lable><b>Enter the Email:</b></lable>
+            <input type="email" name="email" placeholder="Email" class="auth-input">
+            <lable><b>Enter the Number:</b></lable>
+            <input type="tel" name="phone" placeholder="Phone Number" class="auth-input">
+            <div onsumit="Login()">
+            <lable><b>Enter your Password: </b></lable>
+            <input type="password" name="password" id="pwd" placeholder="Password" class="auth-input">
+            <lable><b>Renter your Password: </b></lable>
+            <input type="password" name="password" id ="rpwd" placeholder="Password" class="auth-input">
+            </div>
+            <input type="submit" value="Register" class="auth-btn">
+            
+        </form>
+        <button onclick="show()" class="auth-btn">Click to show</button>
+        <p id="user"></p>
+    </div>
+<script>
+    function register()
+    {
+        let x= document.getElementById("summa").value 
+        alert("Success "+x+" !");
+    }
+    function show()
+    {
+        let x= document.getElementById("user").innerHTML="Athula onu illa keela poturu"; 
+
+    }
+    function login()
+    {
+        let m=document.getElement("pwd").value;
+        let n=document.getElement("cpwd").value;
+        if(m!=n)
+        {
+            alert("Please check the entered password");
+        }
+    }
+</script>
+</body>
+</html>
