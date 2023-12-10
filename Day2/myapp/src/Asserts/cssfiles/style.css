@@ -1,0 +1,59 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: #aa4b6b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-sizing: border-box;
+        height: 100vh;
+        margin: 0;
+}
+.container{
+    height: auto;
+    width: 50vh;
+    display: flex;
+    background-color: rgb(248, 239, 248);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1rem;
+    border: 2px;
+    margin-top: 10em;
+    margin-left: 80vh;
+}
+.auth-input {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+   
+    font-weight: 600;
+    gap: 1rem ;
+    border: 2px;
+    margin-bottom: 1rem;
+}
+
+.auth-btn {
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    /* background-color: blueviolet; */
+    background: #c94b4b; 
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b134f, #c94b4b); 
+    color: rgb(241, 232, 225);
+    font-weight: 600;
+    
+}
+.heading
+{
+    align-items: center;
+    text-align: center;
+   
+}
