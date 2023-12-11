@@ -17,7 +17,7 @@ body{
     /* overflow: hidden; */
     width:auto;
     background-color: rgb(255, 255, 255);
-    border:1px solid #000;
+   
     padding:10px;
 }
 .header ul{
@@ -49,7 +49,6 @@ body{
 }
 .button
 {
- 
     position: fixed; 
     color:antiquewhite;
     top: 10px; 
@@ -60,8 +59,6 @@ body{
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-
-   
     &:hover {
         background-color: rgb(206, 128, 27); 
     border: 2px solid #ffffff; 
@@ -81,8 +78,9 @@ body{
     height:auto;
     width:auto;
     background-color: rgb(206, 128, 27);
-    border-color: #000;
+   
     padding: 5px;
+    border:solid 1px black;
 }
 .nav ul
 {
@@ -147,27 +145,32 @@ body{
     color: white;
     padding: 20px;
     text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+
 }
 .gift-grid
 {
     display: flex;
     grid-template-columns: repeat(3, 1fr);
 
-    grid-gap: 15px;
+    /* grid-gap: 15px; */
     margin: 0 auto;
     max-width: 1000px;
-    padding: 60px;
+    /* padding-right: 60px; */
 }
 
 .gift-category {
     display:flex;
     flex-direction:column;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     /* padding: px; */
     height:auto;
-    width:350px;
+    width:99vh;
+    margin:0;
     border-radius: 16px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .gift-category h2 {
@@ -178,7 +181,8 @@ body{
     
     list-style-type: none;
     flex-direction:row;
-    padding: 20px;
+    margin: 0;
+    /* padding: 20px; */
     align-items: center;
     display:flex;
     /* flex-wrap: wrap; */
@@ -189,11 +193,11 @@ body{
     
     /* grid-template-columns: repeat(3, 1fr); */
     /* width:auto; */
-    flex-direction:row;
+    /* flex-direction:row; */
     border-radius: 20px;
-    border: 1px solid #666666;
-    margin-bottom: 20px;
+    border: 1px solid #080808;
     padding: 20px;
+    gap:10px;
     align-items: center;
     text-align: center;
     transition: background-color 0.3s ease;

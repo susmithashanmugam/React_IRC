@@ -1,0 +1,36 @@
+.back
+{
+    background-color:rgb(206, 128, 27) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    border:1px solid black;
+    text-align: right;
+    padding-right: 50px;
+}
+.footer .footer-row {
+    margin-bottom: 10px;
+}
+
+.footer .footer-row .footer-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer .footer-row ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer .footer-row ul li {
+    margin-bottom: 5px;
+}
+
+.footer .footer-row ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-row ul li a:hover {
+    list-style: none;
+    text-decoration: none;
+}

@@ -66,7 +66,7 @@ function Home()
         
         <p>Find things you'll love. </p>
     </div>
-    
+    <hr></hr>
     <div class="product-grid">
     <div class="product">
         <img src="https://i.etsystatic.com/20482270/r/il/f516f5/4127587895/il_794xN.4127587895_e63o.jpg" alt="Product Image 1" style={{height:'180px',width:'170px'}}/>
