@@ -21,6 +21,9 @@ function Name()
         </ul>
     </div>
 </footer>
+<div class ="foot">
+        <h4><b>Copyright © Susmitha- All rights reserved.</b></h4>
+    </div>
     </>
     )
 }
