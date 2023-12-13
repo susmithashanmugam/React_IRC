@@ -1,29 +1,20 @@
 import '../Asserts/cssfiles/Register.css'
-function Register()
-{
-    return(
-       <>
-       <div class="form">
-  <div class="title">Welcome</div>
-  <div class="subtitle">Let's create your account!</div>
-  <div class="input-container ic1">
-    <input id="firstname" class="input" type="text" placeholder=" " />
-    <div class="cut"></div>
-    <label for="firstname" class="placeholder">First name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="lastname" class="input" type="text" placeholder=" " />
-    <div class="cut"></div>
-    <label for="lastname" class="placeholder">Last name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder=" " />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Email</label>
-    <button type="text" class="submit">submit</button>
-  </div>
-</div>
-       </>
-    )
+function Register() {
+  return (
+    <>
+     <div class="formR">
+                <p class="title">Register</p>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder='Enter Your Email' class="input" required />
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="Enter Name" class="input" required />
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Create a password" class="input" required />
+                <label for="confirm-password"></label>
+                <input type="password" id="confirm-password" placeholder="Re Enter The Password" class="input" required />
+                <button type="submit" class = "btnR">Register</button>
+            </div>
+    </>
+  )
 }
 export default Register
