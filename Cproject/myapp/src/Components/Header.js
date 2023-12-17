@@ -10,53 +10,57 @@ function Header() {
 
                 <div class="main-topic">
 
-                    <p><b>your's Personal<br/> Creators</b></p>
+                    <p><b>your's Personal<br /> Creators</b></p>
 
                 </div>
-                    <div className="search-bar">
-                        <input type="text" placeholder="Search for Your's Wish" class="search-text"/>
-                    </div>
-               
+                <div className="search-bar">
+                    <input type="text" placeholder="Search for Your's Wish" class="search-text" />
+                </div>
+
+                <Link to='/signin'>
                     <div class="buttonx">
-                        Sign in
+                        <b>SignIn</b>
                     </div>
+                </Link>
+                <Link to='/login'>
                     <div class="buttonx">
-                        LogIn
+                        <b>LogIn</b>
                     </div>
-                    <div class="icons">
-                <Heart />
-                <ShoppingCart />
+                </Link>
+                <div class="icons">
+                    <Heart />
+                    <ShoppingCart />
                 </div>
             </div>
-           
-            <nav class ="head-list">
+
+            <nav class="head-list">
                 <ul>
                     <li>
-                       Our Special Sale
+                        Our Special Sale
                     </li>
                     <li>
                         Prints
                     </li>
                     <li>
-                       Portraits
+                        Portraits
                     </li>
                     <li>
-                       Paintings
+                        Paintings
                     </li>
                     <li>
-                      Glass Art
+                        Glass Art
                     </li>
                     <li>
-                      Sculptures
+                        Sculptures
                     </li>
                     <li>
-                      Illustrations
+                        Illustrations
                     </li>
                     <li>
-                     Crafts Supplies
+                        Crafts Supplies
                     </li>
                     <li>
-                     Offer's
+                        Offer's
                     </li>
                 </ul>
             </nav>
