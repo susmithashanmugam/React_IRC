@@ -1,23 +1,18 @@
-import '../asserts/cssfiles/signin.css'
-function Signin()
-{
+
+import '../asserts/cssfiles/signin.css';
+const SignIn = ()=>
+    {
     return(
-        <>
-         <h1>Sign In</h1>
-         <button>Login</button>
-        <form className="container">
-            <label for="email">Email address</label>
-            <input type="email" id="email" required/>
-            <label for="password">Password</label>
-            <input type="password" id="password" required/>
-            <input type="checkbox" id="stay-signed-in"/>
-            <label for="stay-signed-in">Stay signed in</label>
-            <button type="submit">Sign In</button>
-        </form>
-              <a href="#">Register</a>
-             <a href="#">Forgot your password?</a>
-         
+    <>
+   <div class="form">
+    <p class="title">Sign In</p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" class="input" required/>
+    <label for="password">Password:</label>
+    <input type="password" id="password" class="input" required/>
+    <button type="submit">Sign In</button>
+    </div>
     </>
     )
 }
-export default Signin;
+export default SignIn

@@ -9,7 +9,7 @@ function App() {
 
     <div>
       
-      {/* <Header/> */}
+      <Header/>
       <Routes>
         <Route path = '/' element = {<Home/>}/>
         <Route path = '/foot' element = {<Foot/>}/>

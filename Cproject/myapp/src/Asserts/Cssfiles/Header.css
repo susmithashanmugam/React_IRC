@@ -1,0 +1,111 @@
+
+.header-top
+{
+    margin-top: 1px;
+    /* position:static; */
+    /* margin: 0; */
+    display:flex;
+    /* padding: 0; */
+    gap:5rem;
+    width:100%;
+    /* background-color: #ebe0c6b7; */
+}
+.main-topic
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -5px;
+    /* line-height: 20px; */
+    /* padding: 1px; */
+}
+.search-bar
+{
+    /* position:static; */
+    width:40vw;
+    height: 3rem;
+    border-radius: 50px;
+    border:2px solid rgb(0, 0, 0);
+    display: flex;
+   /* margin-top: 3px; */
+   padding: 1px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.search-bar:hover{
+    background-color: #ebe0c6b7;
+    transform: scale(1.03);
+}
+.search-text
+{
+    width:40vw;
+    height: 1.8rem;
+    align-items: left;
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    border: transparent;
+
+}
+.buttonx
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px 20px;
+    text-align: center;
+    height: 15px;
+    justify-content: center;
+    border: transparent;
+    border-radius: 30px;
+    /* margin-top: 8px; */
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.buttonx:hover{
+    transform: scale(0.9);
+    background-color: rgba(122, 121, 121, 0.5);
+}
+.icons
+{
+    display: flex;
+    gap:5rem;
+    align-items:center;
+    border-radius: 50%;
+}
+.icons :hover{
+    border-radius: 20%;
+    background-color: rgba(255, 90, 126, 0.658);
+}
+
+.head-list
+{
+    /* position:static; */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin:0;
+    display: flex;
+    width:100%;
+    background-color: rgb(252, 142, 52);
+}
+.head-list ul{
+    margin-left: 0;
+    display: flex;
+    display:block 2px;
+    align-items: center;
+    flex-direction: row;
+    gap:4rem;
+}
+.head-list ul :hover{
+    transform: scale(0.9);
+}
+
+.head-list li{
+    list-style: none;
+    font-weight: 10;
+    font-size: 19px;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+.nav li:hover,
+.nav li:focus {
+    border-bottom: 2px solid #000; 
+}
