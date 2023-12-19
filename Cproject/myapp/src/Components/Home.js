@@ -1,10 +1,8 @@
 import '../Asserts/Cssfiles/home.css'
 import '../Asserts/Cssfiles/Cards.css'
-import Header from './Header';
-import { Heart } from 'lucide-react';
-import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import Header from './Header';
+import Footer from './Footer';
 function Home() {
     return (
         <>
@@ -12,9 +10,11 @@ function Home() {
             
             <div class="product-grid">
                 <div class="product">
+                    <Link to='frames'>
                     <div class="zoom">
                         <img src="https://i.etsystatic.com/20482270/r/il/f516f5/4127587895/il_794xN.4127587895_e63o.jpg" alt="Product Image 1" style={{ height: '180px', width: '170px' }} />
                     </div>
+                    </Link>
                     <h2>Personalised Frame</h2>
                 </div>
                 <div class="product">
@@ -48,7 +48,7 @@ function Home() {
                     <h2>Resign Art</h2>
                 </div>
             </div>
-            <hr />
+            {/* <hr /> */}
             {/* Cards  */}
             <div class="wrapper">
                 <h1>Hottest Selling Products!</h1>
@@ -103,6 +103,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <hr/>
+            <Footer/>
         </>
     )
 }

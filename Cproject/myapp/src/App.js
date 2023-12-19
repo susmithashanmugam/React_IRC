@@ -1,8 +1,7 @@
-import Header from './Components/Header'
+import Frames from './Pages/Frames';
 import Home from './Components/Home'
 import SignIn from './Components/SignIn';
 import LogIn from './Components/Login';
-import VNav from './Components/VNav';
 import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/login' element={<LogIn />} />
+        <Route path='/frames' element={<Frames/>}/>
         </Routes>
         {/* <VNav/> */}
       </>
