@@ -3,7 +3,7 @@ function SignIn() {
   return (
     <>
      <div class="formR">
-                <p class="title">Register</p>
+                <p class="title">Sign In</p>
                 <label for="email"></label>
                 <input type="email" id="email" placeholder='Enter Your Email' class="input" required />
                 <label for="username"></label>
@@ -12,7 +12,7 @@ function SignIn() {
                 <input type="password" id="password" placeholder="Create a password" class="input" required />
                 <label for="confirm-password"></label>
                 <input type="password" id="confirm-password" placeholder="Re Enter The Password" class="input" required />
-                <button type="submit" class = "btnR">Register</button>
+                <button type="submit" class = "btnR">Sign In</button>
             </div>
     </>
   )

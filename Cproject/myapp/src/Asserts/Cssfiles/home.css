@@ -1,16 +1,10 @@
 
-.header1
+
+.list-icon
 {
-    background-color:  #2A9D8F;
     margin:0;
-    margin-top: 1px;
-    padding: 1px;
-    align-items: center;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: antiquewhite;
-  font-size: 16px;
-    letter-spacing: 2px;
+    margin-left: 0;
+    margin-top: 5px;
 }
 .product-grid {
     /* background-color: #ebe0c6b7; */

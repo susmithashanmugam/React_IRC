@@ -1,72 +1,15 @@
 import '../Asserts/Cssfiles/home.css'
-import '../Asserts/Cssfiles/Header.css'
+import '../Asserts/Cssfiles/Cards.css'
+import Header from './Header';
 import { Heart } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 function Home() {
     return (
         <>
-
-            <div class="header-top">
-                <div class="main-topic">
-
-                    <p><b>your's Personal<br /> Creators</b></p>
-
-                </div>
-                <div className="search-bar">
-                    <input type="text" placeholder="Search for Your's Wish" class="search-text" />
-                </div>
-                <Link to='/signin'>
-                    <div class="buttonx">
-                        <b>SignIn</b>
-                    </div>
-                </Link>
-                <Link to='/login'>
-                <div class="buttonx">
-                    <b>LogIn</b>
-                </div>
-                </Link>
-                <div class="icons">
-                    <Heart />
-                    <ShoppingCart />
-                </div>
-            </div>
-
-            <nav class="head-list">
-                <ul>
-                    <li>
-                        Our Special Sale
-                    </li>
-                    <li>
-                        Prints
-                    </li>
-                    <li>
-                        Portraits
-                    </li>
-                    <li>
-                        Paintings
-                    </li>
-                    <li>
-                        Glass Art
-                    </li>
-                    <li>
-                        Sculptures
-                    </li>
-                    <li>
-                        Illustrations
-                    </li>
-                    <li>
-                        Crafts Supplies
-                    </li>
-                    <li>
-                        Offer's
-                    </li>
-                </ul>
-            </nav>
-            <div class="header1">
-                <p>Find things you'll love. </p>
-            </div>
-            <hr />
+            <Header />
+            
             <div class="product-grid">
                 <div class="product">
                     <div class="zoom">
@@ -103,6 +46,61 @@ function Home() {
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbHFIqr0hQsPt2sKP5Adg395fZpKJeGNZJ2ToJFbD0s-HtyokI8Crf5HI8ERYRNHL9Byo&usqp=CAU" alt="Product Image 6" style={{ height: '180px', width: '170px' }} />
                     </div>
                     <h2>Resign Art</h2>
+                </div>
+            </div>
+            <hr />
+            {/* Cards  */}
+            <div class="wrapper">
+                <h1>Hottest Selling Products!</h1>
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style={{ backgroundImage: 'url(https://i.etsystatic.com/45939599/r/il/4bd2d5/5557719581/il_794xN.5557719581_m5rd.jpg)' }}>
+
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Name Necklace, 24k Gold Custom Necklace Jewelry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style={{ backgroundImage: 'url(https://i.pinimg.com/564x/1d/9d/1c/1d9d1c17794c399e04acc2dd13b63358.jpg)' }}>
+
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Dream Catcher</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style={{ backgroundImage: 'url(https://i.pinimg.com/564x/91/b9/fb/91b9fb68f63b35420c9262cda2e057a4.jpg)' }}>
+
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Resign Pedants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style={{ backgroundImage: 'url(https://leafyaffair.com/cdn/shop/files/Product18_4_db762614-9e47-4c75-aca8-68ccf51cdb35_720x.jpg?v=1685963250)' }}>
+
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <p>Resign Customised Earrings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

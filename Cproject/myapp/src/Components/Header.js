@@ -1,8 +1,22 @@
 import '../Asserts/Cssfiles/Header.css'
+import React, { useState } from 'react'
+import VNav from './VNav';
 import { Heart } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom'
+import { AlignJustify } from 'lucide-react';
+
 function Header() {
+    const [isVNavVisible, setVNavVisibility] = useState(false);
+
+    const handleMouseEnter = () => {
+      setVNavVisibility(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setVNavVisibility(false);
+    };
+  
     return (
         <>
 
@@ -35,8 +49,8 @@ function Header() {
 
             <nav class="head-list">
                 <ul>
-                    <li>
-                        Our Special Sale
+                    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        <AlignJustify />
                     </li>
                     <li>
                         Prints
@@ -64,6 +78,11 @@ function Header() {
                     </li>
                 </ul>
             </nav>
+            {isVNavVisible && <VNav />}
+            <div class="header1">
+                <p>Find things you'll love. </p>
+            </div>
+            <hr />
         </>
     )
 }

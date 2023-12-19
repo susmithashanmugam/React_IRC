@@ -11,7 +11,7 @@
   
   .formR {
       display:flex;
-      height:90vh;
+      height:80vh;
       width:30vw;
       justify-content: center;
       align-items: top;
@@ -20,9 +20,12 @@
     /* max-width: 300px; */
     border-radius: 60px;
     color: #ffffff;
-    background-color: #fff;
+    /* background-color: #ff8a8a; */
     gap:1rem;
-    margin-left: 2rem;
+    margin-left: 27rem;
+    border :1px solid black;
+    margin-top: 2rem;
+    /* padding-left: 20rem; */
   }
   
   .title {
@@ -34,8 +37,8 @@
   }
   
   label {
-    width: 450px;
-    display: block;
+    width: 1px;
+    /* display: block; */
     /* margin-bottom: 10px; */
     gap: 2px;
     color: #000;
@@ -43,9 +46,10 @@
   }
   
   .input {
-    width: 50%;
+    /* width: 20px; */
     padding: 10px;
-    margin-left:80px;
+    width:2rem;
+    margin-left:60px;
     /* border: 1px solid #fff; */
     border-radius: 5px;
     background-color:white;
