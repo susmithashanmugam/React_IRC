@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Susmi",
+      "password": "2005"
+    },
+    {
+      "id": 2,
+      "username": "sri",
+      "password": "1903"
+    },
+    {
+      "id": 3,
+      "username": "sri",
+      "password": "1903"
+    }
+  ],
+  "products": [
+    {
+      "pid": 1,
+      "productname": "color"
+    }
+  ]
+}
