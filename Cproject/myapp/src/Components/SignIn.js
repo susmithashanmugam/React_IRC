@@ -1,20 +1,41 @@
-import '../Asserts/Cssfiles/Signin.css'
-function SignIn() {
+// SignIn.jsx
+import React from 'react';
+import '../Asserts/Cssfiles/SignIn.css'; // Import your CSS file
+
+function SignIn({ onClose }) {
+  const handleSignIn = () => {
+    // Add your sign-in logic here
+    // You can submit the form or handle the authentication process
+    // For simplicity, we'll just close the popup in this example
+    onClose();
+  };
+
   return (
-    <>
-     <div class="formR">
-                <p class="title">Sign In</p>
-                <label for="email"></label>
-                <input type="email" id="email" placeholder='Enter Your Email' class="input" required />
-                <label for="username"></label>
-                <input type="text" id="username" placeholder="Enter Name" class="input" required />
-                <label for="password"></label>
-                <input type="password" id="password" placeholder="Create a password" class="input" required />
-                <label for="confirm-password"></label>
-                <input type="password" id="confirm-password" placeholder="Re Enter The Password" class="input" required />
-                <button type="submit" class = "btnR">Sign In</button>
-            </div>
-    </>
-  )
+    <div className="signInPopup">
+      <div className="formR">
+        <p className="title">Sign In</p>
+        <input type="email" id="email" placeholder="Enter Your Email" className="input" required />
+        <label htmlFor="username"></label>
+        <input type="text" id="username" placeholder="Enter Name" className="input" required />
+        <label htmlFor="password"></label>
+        <input type="password" id="password" placeholder="Create a password" className="input" required />
+        <label htmlFor="confirm-password"></label>
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Re Enter The Password"
+          className="input"
+          required
+        />
+        <button type="submit" className="btnR" onClick={handleSignIn}>
+          Sign In
+        </button>
+        <button type="button" className="closeBtn" onClick={onClose}>
+          Close
+        </button>
+      </div>
+    </div>
+  );
 }
-export default SignIn
+
+export default SignIn;

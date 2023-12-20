@@ -1,17 +1,20 @@
-import '../Asserts/Cssfiles/Login.css'
-const LogIn = ()=>
-    {
-    return(
-    <>
-   <div class="form">
-    <p class="title">Sign In</p>
-    
-    <input type="text" id="username" placeholder="Enter Username"class="input" required/>
-    
-    <input type="password" id="password" placeholder="Enter Your Password" class="input" required/>
-    <button type="submit" class = "btn">Sign In</button>
+// LogIn.jsx
+import React from 'react';
+import '../Asserts/Cssfiles/Login.css';
+
+const LogIn = ({ onClose }) => {
+  return (
+    <div className='LogInPopup' id='LogInPopup'>
+      <div className="form">
+        <p className="title">Log In</p>
+        <input type="text" id="username" placeholder="Enter Username" className="input" required />
+        <input type="password" id="password" placeholder="Enter Your Password" className="input" required />
+        <button type="submit" className="btn" onClick={onClose}>
+          Log In
+        </button>
+      </div>
     </div>
-    </>
-    )
-}
-export default LogIn
+  );
+};
+
+export default LogIn;

@@ -1,38 +1,33 @@
 import '../Asserts/Cssfiles/Header.css'
-import React, { useState } from 'react'
-import VNav from './VNav';
 import { Heart } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom'
-import { AlignJustify } from 'lucide-react';
-
+import '../Asserts/Cssfiles/Signin.css'
+import { useState } from 'react';
+import LogIn from './Login';
 function Header() {
-    const [isVNavVisible, setVNavVisibility] = useState(false);
-    const [selectedNavItem, setSelectedNavItem] = useState(null);
-
-    const handleMouseEnter = () => {
-        setVNavVisibility(true);
+    const handleSignIn = () => {
+        closeSignInPopup();
     };
 
-    const handleMouseLeave = () => {
-        // Do not close the VNav on mouse leave
+    const closeSignInPopup = () => {
+        const signInPopup = document.getElementById('signInPopup');
+        signInPopup.style.display = 'none';
     };
 
-    const handleAlignJustifyClick = () => {
-        setVNavVisibility(!isVNavVisible);
+    const openSignInPopup = () => {
+        const signInPopup = document.getElementById('signInPopup');
+        signInPopup.style.display = 'block';
+    };
+    const [isLoginPopupVisible, setLoginPopupVisibility] = useState(false);
+
+    const openLoginPopup = () => {
+        setLoginPopupVisibility(true);
     };
 
-    const handleVNavItemClick = (item) => {
-        setSelectedNavItem(item);
-        setVNavVisibility(false);
+    const closeLoginPopup = () => {
+        setLoginPopupVisibility(false);
     };
-
-    const handleVNavBarBackClick = () => {
-        // Add logic to handle the back action
-        // For example, close the VNav on back click
-        setVNavVisibility(false);
-    };
-
     return (
         <>
 
@@ -40,67 +35,46 @@ function Header() {
 
                 <div class="main-topic">
 
-                    <p><b>your's Personal<br /> Creators</b></p>
+                    <p><b>Craft Your's </b></p>
 
                 </div>
                 <div className="search-bar">
                     <input type="text" placeholder="Search for Your's Wish" class="search-text" />
                 </div>
 
-                <Link to='/signin'>
-                    <div class="buttonx">
-                        <b>SignIn</b>
+                <div className="buttonx" onClick={openSignInPopup}>
+                    <b>SignIn</b>
+                </div>
+                <div id="signInPopup" className="signInPopup">
+                    <div className="formR">
+                        <p className="title">Sign In</p>
+                        <label htmlFor="email"></label>
+                        <input type="email" id="email" placeholder="Enter Your Email" className="input" required />
+                        <label htmlFor="username"></label>
+                        <input type="text" id="username" placeholder="Enter Name" className="input" required />
+                        <label htmlFor="password"></label>
+                        <input type="password" id="password" placeholder="Create a password" className="input" required />
+                        <label htmlFor="confirm-password"></label>
+                        <input type="password" id="confirm-password" placeholder="Re Enter The Password" className="input" required />
+                        <button type="button" className="btnR" onClick={handleSignIn}>
+                            Sign In
+                        </button>
+                        <button type="button" className="closeBtn" onClick={closeSignInPopup}>
+                            Close
+                        </button>
                     </div>
-                </Link>
-                <Link to='/login'>
-                    <div class="buttonx">
-                        <b>LogIn</b>
-                    </div>
-                </Link>
+                </div>
+              
+                <div className={isLoginPopupVisible ? 'blurred' : ''}>
+    
+                    <button  class='buttonx' onClick={openLoginPopup}>Log In</button>
+                </div>
+                {isLoginPopupVisible && <LogIn onClose={closeLoginPopup} />}
                 <div class="icons">
                     <Heart />
                     <ShoppingCart />
                 </div>
             </div>
-
-            <nav class="head-list">
-                <ul>
-                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='navlinks'>
-                        <AlignJustify onClick={handleAlignJustifyClick} />
-                        {isVNavVisible && <VNav isVisible={isVNavVisible} onItemClick={handleVNavItemClick} onBackClick={handleVNavBarBackClick} />}
-                    </li>
-                    <li>
-                        Prints
-                    </li>
-                    <li>
-                        Portraits
-                    </li>
-                    <li>
-                        Paintings
-                    </li>
-                    <li>
-                        Glass Art
-                    </li>
-                    <li>
-                        Sculptures
-                    </li>
-                    <li>
-                        Illustrations
-                    </li>
-                    <li>
-                        Crafts Supplies
-                    </li>
-                    <li>
-                        Offer's
-                    </li>
-                </ul>
-            </nav>
-            {isVNavVisible && <VNav />}
-            <div class="header1">
-                <p>Find things you'll love. </p>
-                {selectedNavItem && <p>Selected Item: {selectedNavItem}</p>}
-            </div>
-            <hr />
         </>
     )
 }

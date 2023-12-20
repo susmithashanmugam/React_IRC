@@ -1,7 +1,7 @@
 
 .header-top
 {
-    /* left: 0; */
+    
     margin-top: 1px;
     /* position:static; */
     /* margin: 0; */
@@ -15,9 +15,8 @@
 {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: -5px;
-    /* line-height: 20px; */
-    /* padding: 1px; */
+    margin:5px;
+    margin-left: 10px;
 }
 .search-bar
 {
