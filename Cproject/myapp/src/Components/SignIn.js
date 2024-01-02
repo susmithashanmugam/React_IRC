@@ -3,11 +3,7 @@ import React from 'react';
 import '../Asserts/Cssfiles/SignIn.css'; // Import your CSS file
 
 function SignIn({ onClose }) {
-  const handleSignIn = () => {
-    // Add your sign-in logic here
-    // You can submit the form or handle the authentication process
-    // For simplicity, we'll just close the popup in this example
-    onClose();
+ 
   };
 
   return (
@@ -27,7 +23,7 @@ function SignIn({ onClose }) {
           className="input"
           required
         />
-        <button type="submit" className="btnR" onClick={handleSignIn}>
+        <button type="submit" className="btnR">
           Sign In
         </button>
         <button type="button" className="closeBtn" onClick={onClose}>

@@ -2,11 +2,12 @@
 import React from 'react';
 import '../Asserts/Cssfiles/Login.css';
 
-const LogIn = ({ onClose }) => {
+const Login = ({ onClose }) => {
   return (
     <div className='LogInPopup' id='LogInPopup'>
       <div className="form">
         <p className="title">Log In</p>
+        
         <input type="text" id="username" placeholder="Enter Username" className="input" required />
         <input type="password" id="password" placeholder="Enter Your Password" className="input" required />
         <button type="submit" className="btn" onClick={onClose}>
@@ -17,4 +18,4 @@ const LogIn = ({ onClose }) => {
   );
 };
 
-export default LogIn;
+export default Login;

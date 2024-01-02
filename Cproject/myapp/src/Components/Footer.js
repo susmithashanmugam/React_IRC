@@ -1,5 +1,9 @@
 import '../Asserts/Cssfiles/Footer.css'
+import { Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom'
+import { Facebook } from 'lucide-react';
+import { Youtube } from 'lucide-react';
+import { Twitter } from 'lucide-react';
 function Footer() {
     return (
         <footer class="footer">
@@ -17,6 +21,7 @@ function Footer() {
                         <li>Shop</li>
                         <li>Occasions</li>
                         <li>Contact Us</li>
+                        
                     </ul>
                 </div>
                 <div class="footer-section contact">
@@ -24,6 +29,9 @@ function Footer() {
                     <p>Email: info@yourgiftshop.com</p>
                     <p>Phone: 7880563295</p>
                     <p>Address: Coimbatore</p>
+                    <div className='iconsf'>
+                        <Instagram />  <Facebook />   <Youtube />   <Twitter />
+                        </div>
                 </div>
             </div>
             <div class="footer-bottom">

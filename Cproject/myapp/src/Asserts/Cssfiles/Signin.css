@@ -35,13 +35,18 @@
     margin-left: 27rem;
     border :1px solid black;
     margin-top: 2rem;
-    background-color: rgba(255, 234, 157, 0.7);
+    background-color: rgba(255, 234, 157, 0.89);
     z-index: 2; /* Place the form above the overlay */
     position: relative;
     /* position: absolute; */
     /* padding-left: 20rem; */
   }
-  
+  .sh
+  {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown;
+  }
   .title {
     font-size: 24px;
     font-weight: bold;
@@ -51,7 +56,7 @@
   }
   
   label {
-    width: 1px;
+    /* width: 10px; */
     /* display: block; */
     /* margin-bottom: 10px; */
     gap: 2px;
@@ -62,12 +67,13 @@
   .input {
     /* width: 20px; */
     padding: 10px;
-    width:2rem;
+    /* width:100%; */
+    width: 245px;
     margin-left:60px;
-    /* border: 1px solid #fff; */
     border-radius: 5px;
     background-color:white;
     color: #030303;
+    /* margin-bottom: 15px;  */
   }
   
   .btnR {
@@ -87,7 +93,7 @@
   }
   
   .btnR:hover {
-    background-color: #ffffff;
+    background-color:  #2A9D8F;
     color: black;
     border: 1px solid black;
   }

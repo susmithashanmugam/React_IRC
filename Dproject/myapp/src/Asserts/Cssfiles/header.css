@@ -1,0 +1,16 @@
+
+*{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.toph
+{
+    margin:0;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0.2%;
+    width:auto;
+    color: #fffdfa;
+    background-color: #51a189;
+}

@@ -1,8 +1,10 @@
 import '../Asserts/Cssfiles/Pagesc/Frame.css'
+import SNav from './sidenav'
 function Caricature()
 {
     return(
         <>
+        <SNav/>
         <div class ="card-container1">
         <div class="card">
         <div class="image"><span class="text">
