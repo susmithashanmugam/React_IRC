@@ -1,0 +1,33 @@
+*
+{
+    background-color: black;
+    color: antiquewhite;
+}
+.header
+{
+    display: flex;
+    flex-direction: row ;
+    margin-top: 2vh;
+    gap:10vw;
+    font-size: large;
+}
+.icon
+{
+    margin-left: 3vw;
+    /* margin-top: 2vh; */
+    color:antiquewhite;
+}
+.sideNav
+{
+    background-color: rgba(165, 42, 42, 0);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    width: 15%;
+    margin-left: 2vw;
+    /* margin-right: 3vw; */
+}
+.sideNav p{
+    
+}
